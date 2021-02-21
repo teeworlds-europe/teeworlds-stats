@@ -1,0 +1,98 @@
+#root {
+  max-width: 50rem;
+  margin: auto;
+}
+
+.navbar nav {
+  border-radius: 0.5rem;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: darken(white, 15);
+  background-color: darken(white, 5);
+  margin-bottom: 1rem;
+
+  > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      @media (max-width: 740px) {
+        display: block;
+      }
+      display: inline;
+      font-size: 1rem;
+      line-height: 3rem;
+
+      a {
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: black
+      }
+    }
+  }
+}
+
+.server-list, .server-details {
+  font-size: calc(2/3 * 1rem);
+  line-height: 1rem;
+
+  table {
+    background: darken(white, 10);
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 0.1rem solid black;
+
+    thead th {
+      border: 0.1rem solid black;
+      font-weight: bold;
+      background: darken(white, 15);
+    }
+
+    tbody {
+      tr, td, th {
+        border-top: 0.1rem solid black;
+        border-bottom: 0.1rem solid black;
+        padding: 0.5rem;
+        text-align: center;
+        vertical-align: middle;
+      }
+      
+      tr:hover {
+        background-color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.server-details {
+  header {
+    margin-bottom: 1rem;
+  }
+
+  dl {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  dt {
+    flex-basis: 20%;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 0.5rem;
+
+    &::after {
+      content: ":";
+    }
+  }
+
+  dd {
+    flex-basis: 70%;
+    flex-grow: 1;
+  }
+}

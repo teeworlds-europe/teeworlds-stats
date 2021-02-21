@@ -34,4 +34,5 @@ clean:
 	rm -rfv \
 		$(PROGRAMS:=.o) $(PROGRAMS:=.d) \
 		$(SOURCES:.c=.o) $(SOURCES:.c=.d) \
+		$(PROGRAMS)
 

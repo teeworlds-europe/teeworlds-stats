@@ -196,7 +196,7 @@ void print_json(struct server_info *srvinfo) {
       "clan", srvinfo->clients[i].clan,
       "score", srvinfo->clients[i].score,
       "country", srvinfo->clients[i].country,
-      "id", srvinfo->clients[i].team
+      "team", srvinfo->clients[i].team
     );
     json_array_append(jsonclients, jsonclient);
     json_decref(jsonclient);

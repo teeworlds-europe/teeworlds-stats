@@ -1,3 +1,8 @@
 teeworlds-stat-generate
 *.d
+*.d.*
 *.o
+node_modules/
+dist/
+sample-reports/
+yarn-error.log
