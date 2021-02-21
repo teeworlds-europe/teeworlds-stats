@@ -1,9 +1,14 @@
+$mobile_width: 740px;
+
 #root {
   max-width: 50rem;
   margin: auto;
 }
 
 .navbar nav {
+  @media (min-width: $mobile_width) {
+    margin-top: 0.5rem;
+  }
   border-radius: 0.5rem;
   border-width: 0.5rem;
   border-style: solid;
@@ -19,7 +24,7 @@
     > li {
       margin-left: 1rem;
       margin-right: 1rem;
-      @media (max-width: 740px) {
+      @media (max-width: $mobile_width) {
         display: block;
       }
       display: inline;
@@ -37,7 +42,7 @@
 }
 
 .server-list, .server-details {
-  font-size: calc(2/3 * 1rem);
+  font-size: 0.75rem;
   line-height: 1rem;
 
   table {
@@ -78,6 +83,12 @@
   dl {
     display: flex;
     flex-flow: row wrap;
+    font-size: 0.75rem;
+  }
+
+  dt, dd {
+    border-bottom: 0.1rem solid darken(white, 5);
+    border-top: 0.1rem solid darken(white, 5);
   }
 
   dt {
