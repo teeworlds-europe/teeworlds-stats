@@ -1,7 +1,7 @@
 $mobile_width: 740px;
 
 #root {
-  max-width: 50rem;
+  max-width: 70rem;
   margin: auto;
 }
 
@@ -47,7 +47,6 @@ $mobile_width: 740px;
 
   table {
     background: darken(white, 10);
-    table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
     border: 0.1rem solid black;
